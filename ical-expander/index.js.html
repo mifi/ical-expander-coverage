@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ical-expander/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">ical-expander/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">97.22% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>70/72</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">97.3% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>36/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">96.97% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>64/66</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">31×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1039×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1045×</span>
+<span class="cline-any cline-yes">1045×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1045×</span>
+<span class="cline-any cline-yes">1014×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1045×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">29×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">29×</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">1034×</span>
+<span class="cline-any cline-yes">1034×</span>
+<span class="cline-any cline-yes">1034×</span>
+<span class="cline-any cline-yes">1033×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1033×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1033×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1033×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1033×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1027×</span>
+<span class="cline-any cline-yes">1018×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1016×</span>
+<span class="cline-any cline-yes">1016×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">542×</span>
+<span class="cline-any cline-yes">542×</span>
+<span class="cline-any cline-yes">542×</span>
+<span class="cline-any cline-yes">542×</span>
+<span class="cline-any cline-yes">542×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">542×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+const ICAL = require('ical.js');
+&nbsp;
+// Copied from https://dxr.mozilla.org/comm-central/source/calendar/timezones/zones.json
+// And compiled using node compile-zones.js
+// See also https://github.com/mozilla-comm/ical.js/issues/195
+const timezones = require('./zones-compiled.json');
+&nbsp;
+class IcalExpander {
+  constructor(opts) {
+    this.maxIterations = opts.maxIterations != null ? opts.maxIterations : 1000;
+    this.skipInvalidDates = opts.skipInvalidDates != null ? opts.skipInvalidDates : false;
+&nbsp;
+    this.jCalData = ICAL.parse(opts.ics);
+    this.component = new ICAL.Component(this.jCalData);
+    this.events = this.component.getAllSubcomponents('vevent').map(vevent =&gt; new ICAL.Event(vevent));
+&nbsp;
+    if (this.skipInvalidDates) {
+      this.events = this.events.filter((evt) =&gt; {
+        try {
+          evt.startDate.toJSDate();
+          evt.endDate.toJSDate();
+          return true;
+        } catch (err) {
+          // skipping events with invalid time
+          return false;
+        }
+      });
+    }
+  }
+&nbsp;
+  between(after, before) {
+    function isEventWithinRange(startTime, endTime) {
+      return (!after || endTime &gt;= after.getTime()) &amp;&amp;
+      (!before || startTime &lt;= before.getTime());
+    }
+&nbsp;
+    function getTimes(eventOrOccurrence) {
+      const startTime = eventOrOccurrence.startDate.toJSDate().getTime();
+      let endTime = eventOrOccurrence.endDate.toJSDate().getTime();
+&nbsp;
+      // If it is an all day event, the end date is set to 00:00 of the next day
+      // So we need to make it be 23:59:59 to compare correctly with the given range
+      if (eventOrOccurrence.endDate.isDate &amp;&amp; (endTime &gt; startTime)) {
+        endTime -= 1;
+      }
+&nbsp;
+      return { startTime, endTime };
+    }
+&nbsp;
+    const exceptions = [];
+&nbsp;
+    this.events.forEach((event) =&gt; {
+      if (event.isRecurrenceException()) exceptions.push(event);
+    });
+&nbsp;
+    const ret = {
+      events: [],
+      occurrences: [],
+    };
+&nbsp;
+    this.events.filter(e =&gt; !e.isRecurrenceException()).forEach((event) =&gt; {
+      const exdates = [];
+&nbsp;
+      event.component.getAllProperties('exdate').forEach((exdateProp) =&gt; {
+        const exdate = exdateProp.getFirstValue();
+        exdates.push(exdate.toJSDate().getTime());
+      });
+&nbsp;
+      // Recurring event is handled differently
+      if (event.isRecurring()) {
+        const iterator = event.iterator();
+&nbsp;
+        let next;
+        let i = 0;
+&nbsp;
+        do {
+          i += 1;
+          next = iterator.next();
+          if (next) {
+            const occurrence = event.getOccurrenceDetails(next);
+&nbsp;
+            const { startTime, endTime } = getTimes(occurrence);
+&nbsp;
+            const isOccurrenceExcluded = exdates.indexOf(startTime) !== -1;
+&nbsp;
+            // TODO check that within same day?
+            const exception = exceptions.find(ex =&gt; ex.uid === event.uid &amp;&amp; ex.recurrenceId.toJSDate().getTime() === occurrence.startDate.toJSDate().getTime());
+&nbsp;
+            // We have passed the max date, stop
+            if (before &amp;&amp; startTime &gt; before.getTime()) break;
+&nbsp;
+            // Check that we are within our range
+            if (isEventWithinRange(startTime, endTime)) {
+              if (exception) {
+                ret.events.push(exception);
+              } else <span class="missing-if-branch" title="else path not taken" >E</span>if (!isOccurrenceExcluded) {
+                ret.occurrences.push(occurrence);
+              }
+            }
+          }
+        }
+        while (next &amp;&amp; (!this.maxIterations || i &lt; this.maxIterations));
+&nbsp;
+        return;
+      }
+&nbsp;
+      // Non-recurring event:
+      const { startTime, endTime } = getTimes(event);
+&nbsp;
+      if (isEventWithinRange(startTime, endTime)) ret.events.push(event);
+    });
+&nbsp;
+    return ret;
+  }
+&nbsp;
+  before<span class="fstat-no" title="function not covered" >(before) {</span>
+<span class="cstat-no" title="statement not covered" >    return this.between(undefined, before);</span>
+  }
+&nbsp;
+  after<span class="fstat-no" title="function not covered" >(after) {</span>
+<span class="cstat-no" title="statement not covered" >    return this.between(after);</span>
+  }
+&nbsp;
+  all() {
+    return this.between();
+  }
+}
+&nbsp;
+function registerTimezones() {
+  Object.keys(timezones).forEach((key) =&gt; {
+    const icsData = timezones[key];
+    const icsTimezone = `BEGIN:VTIMEZONE\r\nTZID:${key}\r\n${icsData}\r\nEND:VTIMEZONE`;
+    const parsed = ICAL.parse(`BEGIN:VCALENDAR\nPRODID:-//tzurl.org//NONSGML Olson 2012h//EN\nVERSION:2.0\n${icsTimezone}\nEND:VCALENDAR`);
+    const comp = new ICAL.Component(parsed);
+    const vtimezone = comp.getFirstSubcomponent('vtimezone');
+&nbsp;
+    ICAL.TimezoneService.register(key, new ICAL.Timezone(vtimezone));
+  });
+}
+&nbsp;
+registerTimezones();
+&nbsp;
+module.exports = IcalExpander;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Jan 09 2021 18:12:24 GMT+0000 (Coordinated Universal Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
